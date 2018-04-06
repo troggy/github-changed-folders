@@ -22,7 +22,10 @@ const getChangedFolders = (repo, commit) => new Promise((resolve, reject) => {
     res.on('end', () => {
       const response = JSON.parse(body);
       if (!response.files) return;
-      let changedFolders = response.files.map(f => f.filename.split('/')[0]);
+      let changedFolders = response.files
+        .map(f => f.filename.split('/'))
+        .filter(f => f.length > 1)
+        .map(f => f[0]);
       changedFolders = [...new Set(changedFolders)];
       resolve(changedFolders); // eslint-disable-line no-console
     });

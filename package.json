@@ -1,6 +1,6 @@
 {
   "name": "github-changed-folders",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "NPM Module/CLI to get list of top level folders change in given commit in given Github repo",
   "main": "github-changed-folders.js",
   "scripts": {
