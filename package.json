@@ -1,0 +1,23 @@
+{
+  "name": "github-changed-folders",
+  "version": "1.0.0",
+  "description": "NPM Module/CLI to get list of top level folders change in given commit in given Github repo",
+  "main": "github-changed-folders.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troggy/github-changed-folders.git"
+  },
+  "keywords": [
+    "github-api",
+    "github"
+  ],
+  "author": "Kosta Korenkov <kosta@whoot.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/troggy/github-changed-folders/issues"
+  },
+  "homepage": "https://github.com/troggy/github-changed-folders#readme"
+}
